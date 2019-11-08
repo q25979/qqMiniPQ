@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  color: #666;
+}
+
+.container>.ul {
+  padding: 20rpx;
+}
+.container>.ul>.li:nth-child(2n) {
+  margin-left: 20rpx;
+}
+
+.container>.ul>.li {
+  display: inline-block;
+  width: calc(50% - 20rpx);
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.container>.ul>.li>.box {
+  padding: 20rpx;
+  font-size: 24rpx;
+}
+
+.container>.ul>.li>.box .top {
+  height: 180rpx;
+  text-align: center;
+}
+.container>.ul>.li>.box .top>image {
+  height: 100%;
+  width: 180rpx;
+}
+
+.container>.ul>.li>.box .bottom {
+  margin-top: 20rpx;
+}
+.container>.ul>.li>.box .bottom .title {
+  font-size: 28rpx;
+  font-weight: bold;
+}
