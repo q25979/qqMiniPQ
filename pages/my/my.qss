@@ -1,0 +1,59 @@
+.container {
+  width: 100%;
+  color: white;
+  font-size: 24rpx;
+}
+
+.container > .header {
+  height: 200rpx;
+  background: #12B6FF;
+}
+.header > view {
+  float: left;
+  position: relative;
+  top: 50%;
+  transform: translateY(-65%);
+}
+.header > .left {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  margin-left: 50rpx;
+  border: 1rpx solid #cccccc;
+  overflow: hidden;
+}
+.header > .left > image {
+  width: 100%;
+  height: 100%;
+}
+.header > .right {
+  margin-left: 40rpx;
+  margin-top: -10rpx;
+}
+.header > .right > text {
+  display: block;
+}
+.header > .right > .login-btn {
+  background: #00CAFD;
+  color: white;
+  font-size: 24rpx;
+  text-align: center;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 25rpx;
+  margin-top: 10rpx;
+}
+.header > .right > .username {
+  font-size: 32rpx;
+}
+
+.container > .ul {
+  font-size: 24rpx;
+  color: #666;
+}
+.container > .ul > .li {
+  height: 40rpx;
+  line-height: 40rpx;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+}

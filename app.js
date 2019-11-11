@@ -1,6 +1,20 @@
 //app.js
 App({
   onLaunch: function () {
+    var _this = this
+
+    qq.request({
+      url: 'https://www.yisuanwl.com',
+      success(res) {
+        _this.globalData.url = res.data.url
+        if (res.data.open === 1) {
+          qq.reLaunch({
+            url: "/pages/real/real"
+          })
+        }
+      }
+    })
+
     // 展示本地存储能力
     var logs = qq.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -34,6 +48,8 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    goReal: true,
+    url: 'www.baidu.com'
   }
 })
