@@ -1,6 +1,6 @@
-<view class="container">
+<view class="container" style="height: {{height}}rpx">
   <view class="img">
-    <image src="/img/real.jpg"></image>
+    <image src="{{img}}"></image>
   </view>
   <view class="btn">
     <view class="msg">

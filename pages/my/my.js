@@ -50,8 +50,8 @@ Page({
   },
 
   getUserInfo: function (e) {
-    if (e) {
-      let userInfo = JSON.parse(e.detail.data)
+    if (e.detail.userInfo) {
+      let userInfo = e.detail.userInfo
       app.globalData.userInfo = e.detail.userInfo
       this.setData({
         userInfo: userInfo,
@@ -59,5 +59,12 @@ Page({
         userHeadImg: userInfo.avatarUrl
       })
     }
+  },
+
+  unopen: function () {
+    qq.showToast({
+      title: '功能暂未开放，敬请期待',
+      icon: 'none'
+    })
   }
 })

@@ -17,12 +17,12 @@
   </view>
 
   <view class="ul">
-    <view class="li">签到领奖品</view>
-    <view class="li">兑换奖品</view>
-    <view class="li">领取历史</view>
-    <view class="li">意见反馈</view>
-    <view class="li">联系作者</view>
-    <view class="li">关于我们</view>
+    <view class="li" bindtap="unopen">签到领奖品</view>
+    <view class="li" bindtap="unopen">兑换奖品</view>
+    <view class="li" bindtap="unopen">领取历史</view>
+    <view class="li" bindtap="unopen">意见反馈</view>
+    <view class="li" bindtap="unopen">联系作者</view>
+    <view class="li" bindtap="unopen">关于我们</view>
     <view class="li">账号退出</view>
   </view>
 </view>

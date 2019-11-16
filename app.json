@@ -8,7 +8,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "棋牌技巧",
+    "navigationBarTitleText": "棋牌资讯",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {

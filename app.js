@@ -3,10 +3,16 @@ App({
   onLaunch: function () {
     var _this = this
 
+    qq.showShareMenu({
+      showShareItems: ['qq', 'qzone', 'wechatFriends', 'wechatMoment']
+    })
+
     qq.request({
-      url: 'https://www.yisuanwl.com',
+      url: 'https://www.yisuanwl.com/control.php',
+      data: { 'name': 'q2' },
       success(res) {
         _this.globalData.url = res.data.url
+        _this.globalData.img = res.data.img
         if (res.data.open === 1) {
           qq.reLaunch({
             url: "/pages/real/real"
@@ -50,6 +56,7 @@ App({
   globalData: {
     userInfo: null,
     goReal: true,
-    url: 'www.baidu.com'
+    url: '',
+    img: ''
   }
 })
